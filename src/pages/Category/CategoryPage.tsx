@@ -63,6 +63,7 @@ const CategoryPage: React.FC = () => {
   };
 
   const handleAddToCart = () => {
+    if(!product) return
     const cartItem = {
       id: product.id,
       name: product.name,

@@ -5,7 +5,7 @@ export interface Product {
   id: number;
   brand: string;
   name: string;
-  price: number;
+  price: string;
   price_sign: string | null;
   currency: string | null;
   image_link: string;
