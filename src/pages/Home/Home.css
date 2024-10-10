@@ -1,0 +1,40 @@
+/* Add this to your CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Fjalla+One&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0; /* Soft background color */
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Fjalla One', sans-serif;
+  color: #ff6b6b; /* Use a warm color for headings */
+  text-align: center; /* Center align heading */
+  margin-bottom: 1rem; /* Add space below heading */
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  background-color: #3b82f6; /* Primary button color */
+  color: white; /* White text for contrast */
+  padding: 10px 20px; /* Better padding for buttons */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+  transform: scale(1.05); /* Slightly reduce scale for hover */
+  transition: transform 0.2s ease;
+  background-color: #2563eb; /* Darken button color on hover */
+}
+
+.video {
+  filter: brightness(0.4) blur(2px); /* Darker and more blurred background */
+}
+
+.spinner {
+  border-top-color: transparent; /* Make the top color transparent for a smooth spinning effect */
+}

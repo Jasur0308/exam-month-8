@@ -1,0 +1,12 @@
+/* Spinner styles */
+.spinner {
+  border-top-color: transparent; /* Make the top color transparent for a smooth spinning effect */
+}
+
+/* Spin animation */
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
