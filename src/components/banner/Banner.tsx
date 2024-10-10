@@ -5,7 +5,7 @@ import honey from "../../assets/honey.png";
 import { Product } from '../../api/makeupApi';
 
 interface BannerProps {
-  featuredProduct: Product & { price_sign?: string | null };
+  featuredProduct: Product | Product[];
 }
 
 const Banner: React.FC<BannerProps> = ({ featuredProduct }) => {

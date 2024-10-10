@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 interface ProductCardProps {
   product: Product;
+  className?: string; // Add className as an optional prop
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {

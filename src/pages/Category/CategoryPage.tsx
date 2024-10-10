@@ -42,6 +42,8 @@ const CategoryPage: React.FC = () => {
   const brands = ['all', 'colourpop', 'w3llpeople', 'dior', 'marcelle'];
   const colors = ['all', 'Red', 'Pink', 'Blue', 'Green', 'Black', 'White'];
 
+  console.log(colors);
+
   const handleCategoryChange = (e: ChangeEvent<HTMLSelectElement>) => {
     setCategory(e.target.value);
   };
@@ -53,6 +55,8 @@ const CategoryPage: React.FC = () => {
   const handleColorChange = (e: ChangeEvent<HTMLSelectElement>) => {
     setColor(e.target.value);
   };
+
+  console.log(handleColorChange);
 
   const handleMinPriceChange = (e: ChangeEvent<HTMLInputElement>) => {
     setMinPrice(e.target.value ? Number(e.target.value) : '');

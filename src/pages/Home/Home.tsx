@@ -34,8 +34,8 @@ const Home: React.FC = () => {
     );
   }
 
-  const featuredProducts = products ? products.slice(228,232) : [];
-  const featuredProduct = products ? products.slice(1000,1004) : [];
+  const featuredProducts = products ? products.slice(228, 232) : [];
+  const featuredProduct = products ? products[1000] : null; // Select one product instead of an array
 
   return (
     <>
@@ -60,7 +60,7 @@ const Home: React.FC = () => {
           </button>
         </section>
 
-        {featuredProduct && <Banner featuredProduct={featuredProduct} />}
+        {featuredProduct && <Banner featuredProduct={featuredProduct} />} {/* Single product */}
 
         <section id="products" className="py-16 bg-gray-100">
           <div className="container mx-auto px-4">
